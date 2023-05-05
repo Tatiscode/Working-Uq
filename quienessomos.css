@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2? family= Nerko+One & display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+/*   @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap'); */
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+.container_todo {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 4rem auto;
+
+  gap: 20px;
+}
+.swiper {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  border-radius: 7px;
+  height: 100%;
+}
+
+.container_todo .text {
+  width: 100%;
+  max-width: 800px;
+  padding: 0 20px;
+  text-align: center;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+main h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  margin: 1rem;
+  text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .container_todo {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 3rem 1rem;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 750px) {
+  .container_todo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 3rem 1rem;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 550px) {
+  .container_todo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 1rem 1rem;
+    gap: 20px;
+  }
+}
+
+.self {
+  font-size: 3rem;
+  text-align: center;
+  position: relative;
+  color: #263f4b;
+  margin: 20px 10px;
+}
+
+.self::after {
+  content: "";
+
+  width: 100px;
+  height: 5px;
+  background: #3366cc;
+  margin: 0 auto;
+  position: absolute;
+  top: -20px;
+  text-align: center;
+  left: 50%;
+  border-radius: 10px;
+  transform: translateX(-50%);
+}

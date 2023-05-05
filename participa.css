@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2? family= Nerko+One & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/*   @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap'); */
+*{
+
+    font-family: 'Roboto', sans-serif;
+
+}
+.galeria-imagenes {
+    /*Código para ampliar o disminuir la caja que contine los botones verdes*/
+    /*  outline: 2px solid rgb(81, 255, 0); */
+    margin: 2px;
+    padding: 5px;
+    max-width: 45%;
+    /* border-radius: 1em; */
+    background-color: #FFFFFF;
+    /* box-shadow: 1em 1em 2em var(--sombra-ppal), 1em 1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent; */
+}
+
+.contenedor p {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 20px;
+    line-height: 19px;
+    /*  font-weight: bolder; */
+   
+    color: #001545;
+   
+}
+
+@media screen and (max-width: 720px) {
+    .galeria-imagenes {
+        /*Código para ampliar o disminuir la caja que contine los botones verdes*/
+        /*  outline: 2px solid rgb(81, 255, 0); */
+        margin: 2px;
+        padding: 5px;
+        max-width: 95%;
+        /* border-radius: 1em; */
+        background-color: #FFFFFF;
+        /* box-shadow: 1em 1em 2em var(--sombra-ppal), 1em 1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent; */
+    }
+}
+
+/* cards */
+
+.container__box{
+    max-width: 100%;
+    margin: auto;
+    margin-top: 40px;
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   gap: 1rem;
+}
+
+.box{
+    width: 218px;
+    height: 200px;
+    background: #ffffff;
+    margin: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all 300ms ease;
+    position: relative;
+}
+
+.box:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 30px -15px rgba(0,0,0,0.5);
+
+    z-index: 1;
+}
+
+.box i{
+    font-size: 60px;
+    color: #0099E9;
+}
+
+.box:hover i{
+    color: #fff;
+}
+
+.box h5{
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #777777;
+}
+
+.box:hover h5{
+    color: #fff;
+    opacity: 0;
+}
+
+.box h4{
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #fff;
+    position: absolute;
+    bottom: 50px;
+    filter: blur(5px);
+    opacity: 1;
+}
+
+.box:hover h4{
+    font-size: 14px;
+    opacity: 1;
+    filter: blur(0px);
+    color: #fff;
+    transition: all 600ms ease;
+}
+
+
+@media screen and (max-width:500px) {
+.container__box {
+    max-width: 100%;
+    margin: auto;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+}
+
+.box{
+    width: 170px;
+    height: 200px;
+    background: #ffffff;
+    margin: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all 300ms ease;
+    position: relative;
+}
+}
